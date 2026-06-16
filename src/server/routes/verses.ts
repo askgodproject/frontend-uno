@@ -11,7 +11,7 @@ const router = Router()
 
 // GET /api/verses - list all verses
 router.get('/', (_req: Request, res: Response) => {
-  res.status(200).json(verses)
+  res.status(200).json([...verses])
 })
 
 // GET /api/verses/:id - retrieve a single verse
